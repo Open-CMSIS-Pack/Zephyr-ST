@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Setup Zephyr-Alif workspace",
+            "label": "Setup Zephyr-ST workspace",
             "type": "shell",
             "command": [
                 "mkdir -p Zephyr-Workspace ;",
@@ -11,7 +11,8 @@
                 "rm ./west.yml ;",
                 "cd Zephyr-Workspace ;",
                 "west init -l ./manifest --mf ./west.yml ;",
-                "west update ;"
+                "west update ;",
+                "cp ./manifest/west.yml ../west.yml ;",
             ],
             "windows": {
                 "options": {
