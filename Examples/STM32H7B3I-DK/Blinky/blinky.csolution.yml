@@ -12,8 +12,6 @@ solution:
     - type: STM32H7B3I-DK
       board: STMicroelectronics::STM32H7B3I-DK
       device: STMicroelectronics::STM32H7B3LIHxQ
-      variables:
-        - west-board: stm32h7b3i_dk
       target-set:
         - set:
           debugger:
