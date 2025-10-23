@@ -38,5 +38,5 @@ solution:
   # List related projects.
   projects:
     - west:
-      app-path: ./threads
+        app-path: ./threads
   compiler: GCC
