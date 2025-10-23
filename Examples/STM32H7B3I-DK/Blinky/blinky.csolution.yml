@@ -36,5 +36,5 @@ solution:
   # List related projects.
   projects:
     - west:
-      app-path: ./blinky
+        app-path: ./blinky
   compiler: GCC
