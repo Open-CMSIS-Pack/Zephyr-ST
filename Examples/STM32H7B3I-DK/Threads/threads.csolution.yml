@@ -37,7 +37,6 @@ solution:
 
   # List related projects.
   projects:
-    - project: ./threads.cproject.yml
-      west:
+    - west:
         app-path: ./threads
   compiler: GCC

@@ -35,7 +35,6 @@ solution:
 
   # List related projects.
   projects:
-    - project: blinky.cproject.yml
-      west:
+    - west:
         app-path: ./blinky
   compiler: GCC
