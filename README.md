@@ -7,9 +7,13 @@ Zephyr examples for STMicroelectronics STM32 based boards. The debug launch.json
    - python3-pip
 2. Install west and pyelftools with this command:
    ```bash
-   python3 -m pip install west pyelftools
+   python3 -m pip install west pyelftools jsonschema
    ``` 
-3. Make sure to add the executable `west.exe` into the **PATH** environment variable, if required.
+3. Verify the west installation by running:
+   ```bash
+   west --version
+   ```
+   - In case you see the error `west: command not found`, add the west.exe in PATH if reqired
 
 More details can be found in [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html).
 
