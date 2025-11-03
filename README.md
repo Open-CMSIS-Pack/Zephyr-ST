@@ -34,7 +34,7 @@ More details can be found in [Zephyr Getting Started Guide](https://docs.zephyrp
    **For Ubuntu:**
 
    ```bash
-   (echo; echo 'export MY_ENV_VAR="/usr/.../zephyrproject/zephyr"') >> ~/.bashrc
+   (echo; echo 'export ZEPHYR_BASE="/home/.../zephyrproject/zephyr"') >> ~/.bashrc
    source ~/.bashrc
    ```
    - Make sure to restart the VS Code.
@@ -42,7 +42,7 @@ More details can be found in [Zephyr Getting Started Guide](https://docs.zephyrp
    **For MacOS:**
 
    ```bash
-   (echo; echo 'export ZEPHYR_BASE="/home/.../zephyrproject/zephyr"') >> ~/.zshrc
+   (echo; echo 'export ZEPHYR_BASE="/usr/.../zephyrproject/zephyr"') >> ~/.zshrc
    source ~/.zshrc
    ```
    - Make sure to fully quit VS Code, not just close the window. Otherwise, the changes won’t be applied.
