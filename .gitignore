@@ -81,3 +81,6 @@ uv2csolution.log
 
 # legacy intermediate project file
 *.cprj
+
+# Zephyr workspace and west build artifacts
+**/zephyrproject
