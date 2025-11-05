@@ -27,8 +27,7 @@ More details can be found in [Zephyr Getting Started Guide](https://docs.zephyrp
    cd ./zephyrproject
    west update 
    ```
-   - Now the standard Zephyr modules can be found under the *./Zephyr-ST/zephyrproject* folder.
-
+   
 3. To use the west tools for projects located in different folders, set the `ZEPHYR_BASE` environment variable to the *./Zephyr-ST/zephyrproject/zephyr* folder:
 
    **For Ubuntu:**
