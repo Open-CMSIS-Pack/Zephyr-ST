@@ -1,6 +1,15 @@
 # Zephyr-ST (Work in Progress)
 Zephyr examples for STMicroelectronics STM32 based boards. The debug launch.json file has been adapted to load the ELF image built by the Zephyr West tool debugged by the [CMSIS-Debugger](https://marketplace.visualstudio.com/items?itemName=Arm.vscode-cmsis-debugger) extension.
 
+## Examples Description
+
+| Example name                              | Description   |
+|---                                        |---            |
+| [blinky](./Examples/STM32H7B3I-DK/Blinky/) | A standard Zephyr basic example that blinks an LED forever using the Zephyr GPIO API by configuring a pin as output and toggling it in a loop. |
+| [threads](./Examples/STM32H7B3I-DK/Threads/) | A standard Zephyr basic example that spawns multiple compile-time threads that blink LEDs with different periods and report status via a FIFO to a print thread. |
+
+For more information about each example, please see the official [Zephyr example](https://github.com/zephyrproject-rtos/zephyr/tree/main/samples/basic) repository.
+
 # Steps to setup the required tools for Zephyr
 1. Install dependencies to your PC:
    - python3
@@ -13,7 +22,7 @@ Zephyr examples for STMicroelectronics STM32 based boards. The debug launch.json
    ```bash
    west --version
    ```
-   - In case you see the error `west: command not found`, add the west.exe in PATH if reqired
+   - In case you see the error `west: command not found`, add the west.exe in PATH if reqired.
 
 More details can be found in [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html).
 

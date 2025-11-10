@@ -1,5 +1,6 @@
 # A solution is a collection of related projects that share same base configuration.
 solution:
+  created-for: CMSIS-Toolbox@2.12.0
 
   # List the packs that define the device and/or board.
   packs:
@@ -31,6 +32,7 @@ solution:
         - CONFIG_DEBUG: y
         - CONFIG_DEBUG_THREAD_INFO: y
         - CONFIG_DEBUG_OPTIMIZATIONS: y
+        - CONFIG_THREAD_STACK_INFO: y
     - type: Release
       west-defs:
         - CONFIG_SIZE_OPTIMIZATIONS: y
