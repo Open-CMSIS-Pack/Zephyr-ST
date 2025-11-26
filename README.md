@@ -133,15 +133,10 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
 
 For more information about each example, please see the official [Zephyr example](https://github.com/zephyrproject-rtos/zephyr/tree/main/samples/basic) repository.
 
-# Steps to build and debug the Zephyr example
+## Work with the example
 1. Open the cloned repository's folder in VS Code.
-
 2. In the CMSIS view, click on **...**, use **Select Active Solution from workspace**, and choose an option.
-   
 3. Press the **Manage Solution Settings** button. In the dialog, select the target board and application.
-
 4. Press the **Build solution** button to build the example.
-
 5. Press the **"Build solution"** button to build the example.
-
 6. Start the CMSIS Debugger.
