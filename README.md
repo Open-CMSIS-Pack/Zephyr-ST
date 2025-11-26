@@ -45,10 +45,10 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   pip install west
   ```
 
-- Get the Zephyr source code using the Alif SDK:
+- Get the standard Zephyr source code:
 
   ```sh
-  west init -m https://github.com/alifsemi/sdk-alif.git --mr v2.0.0
+  west init
   west update
   ```
 
@@ -106,10 +106,10 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   pip install west
   ```
 
-- Get the Zephyr source code using the Alif SDK:
+- Get the standard Zephyr source code:
 
   ```sh
-  west init -m https://github.com/alifsemi/sdk-alif.git --mr v2.0.0
+  west init
   west update
   ```
 
