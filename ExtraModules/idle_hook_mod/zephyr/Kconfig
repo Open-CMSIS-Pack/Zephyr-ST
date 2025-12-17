@@ -1,0 +1,13 @@
+menu "App debug options"
+
+config DISABLE_WFI_WHILE_DEBUG
+    bool "Disable WFI/WFE in idle while debugging"
+    default n
+    help
+      When enabled, CPU will skip WFI/WFE in idle state
+      while a debugger is connected.
+      This is intended for debugging only.
+
+    select ARM_ON_ENTER_CPU_IDLE_HOOK
+
+endmenu
