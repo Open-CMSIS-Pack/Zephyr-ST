@@ -11,9 +11,13 @@ This repository contains an exemplary CMSIS solution file that can be used to bu
 4. Install Zephyr on your machine (refer to [Linux and macOS](#linux-and-macos)/[Windows](#windows)).
 5. [Work with the example](#work-with-the-example)
 
+
+> [!NOTE]
+> Check that the **Arm CMSIS Solution** extension is at least v1.64.0.
+
 ## Zephyr installation
 
-This chapter contains installation instructions for [Linux and macOS](#linux-and-macos) and [Windows](#windows)).
+This chapter contains installation instructions for [Linux and macOS](#linux-and-macos) and [Windows](#windows).
 
 ### Linux and macOS
 
@@ -58,25 +62,9 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   west packages pip --install
   ```
 
-- Set the `ZEPHYR_BASE` environment variable to the `/zephyrproject/zephyr` folder:
-
-  **Linux**
+- Set the environment variables for Zephyr workspace and Python virtual environoment in Keil Studio as explained in the [Keil Studio documentation](https://mdk-packs.github.io/vscode-cmsis-solution-docs/zephyr.html#set-environment-variables). 
   
-  ```sh
-  (echo; echo 'export ZEPHYR_BASE="/home/.../zephyrproject/zephyr"') >> ~/.bashrc
-  source ~/.bashrc
-  ```
-
-  Make sure to restart the VS Code.
-
-  **macOS**
-  
-  ```sh
-  (echo; echo 'export ZEPHYR_BASE="/usr/.../zephyrproject/zephyr"') >> ~/.zshrc
-  source ~/.zshrc
-  ```
-  
-  Make sure to fully quit VS Code, not just close the window. Otherwise, the changes won’t be applied.
+- Make sure to fully quit VS Code. Otherwise, the changes won’t be applied.
 
 ### Windows
 
@@ -101,10 +89,7 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   .venv\Scripts\activate.bat
   ```
 
-  Once activated your shell will be prefixed with (.venv). The virtual environment can be deactivated at any time by running deactivate.
-
-> [!Note]
-> Remember to activate the virtual environment every time you start working.
+  Once activated your shell will be prefixed with (.venv). The virtual environment can be deactivated at any time by running `deactivate`.
 
 - Install west:
 
@@ -125,8 +110,8 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   west packages pip --install
   ```
 
-- Set the `ZEPHYR_BASE` environment variable to `C:\...\zephyrproject\zephyr` in
-  [Environment Variables](https://learn.microsoft.com/en-us/answers/questions/4330946/change-system-variables-on-windows-11).
+- Set the environment variables for Zephyr workspace and Python virtual environoment in Keil Studio as explained in the [Keil Studio documentation](https://mdk-packs.github.io/vscode-cmsis-solution-docs/zephyr.html#set-environment-variables). 
+  
 
 - Make sure to restart the VS Code.
 
