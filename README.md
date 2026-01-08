@@ -129,5 +129,4 @@ For more information about each example, please see the official [Zephyr example
 2. In the CMSIS view, click on **...**, use **Select Active Solution from workspace**, and choose an option.
 3. Press the **Manage Solution Settings** button. In the dialog, select the target board and application.
 4. Press the **Build solution** button to build the example.
-5. Press the **"Build solution"** button to build the example.
-6. Start the CMSIS Debugger.
+5. Start the CMSIS Debugger.
