@@ -4,8 +4,11 @@ This repository contains an exemplary CMSIS solution file that can be used to bu
 ## Quick start
 
 - Clone this repository onto your machine.
-- Open it in VS Code. It should install required extensions automatically.
-- In the CMSIS view, click on **...**, use **Open Solution in Workspace**, and choose "zephyr".
+- [Install Zephyr](#zephyr-installation).
+- Open this repository in VS Code. It should install required extensions automatically.
+- In the CMSIS view, click on **...**, use **Open Solution in Workspace**, and choose your desired project.
+- Set the environment variables for Zephyr workspace and Python virtual environoment as explained in the [Keil Studio documentation](https://mdk-packs.github.io/vscode-cmsis-solution-docs/zephyr.html#set-environment-variables).
+- Make sure to fully restart the VS Code.
 - Press the **Manage Solution Settings** button. In the dialog, select the target board and application.
 - Press the **Build solution** button to build the example.
 - Press the **Load & Debug application** button to start a debug session.
@@ -60,10 +63,6 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   west packages pip --install
   ```
 
-- Set the environment variables for Zephyr workspace and Python virtual environoment in Keil Studio as explained in the [Keil Studio documentation](https://mdk-packs.github.io/vscode-cmsis-solution-docs/zephyr.html#set-environment-variables). 
-  
-- Make sure to fully quit VS Code. Otherwise, the changes won’t be applied.
-
 ### Windows
 
 - Open a `cmd.exe` terminal window as a regular user.
@@ -107,10 +106,6 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   ```sh
   west packages pip --install
   ```
-
-- Set the environment variables for Zephyr workspace and Python virtual environoment in Keil Studio as explained in the [Keil Studio documentation](https://mdk-packs.github.io/vscode-cmsis-solution-docs/zephyr.html#set-environment-variables). 
-
-- Make sure to restart the VS Code.
 
 ## Examples Description
 
