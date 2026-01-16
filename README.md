@@ -3,14 +3,12 @@ This repository contains an exemplary CMSIS solution file that can be used to bu
 
 ## Quick start
 
-1. Make sure that your host OS is up-to-date.
-2. Install the following dependencies using your favorite package manager:
-    - Cmake (min. version 3.20.5)
-    - Python (min. version 3.10)
-3. Clone this repository onto your machine.
-4. Install Zephyr on your machine (refer to [Linux and macOS](#linux-and-macos)/[Windows](#windows)).
-5. [Work with the example](#work-with-the-example)
-
+- Clone this repository onto your machine.
+- Open it in VS Code. It should install required extensions automatically.
+- In the CMSIS view, click on **...**, use **Open Solution in Workspace**, and choose "zephyr".
+- Press the **Manage Solution Settings** button. In the dialog, select the target board and application.
+- Press the **Build solution** button to build the example.
+- Press the **Load & Debug application** button to start a debug session.
 
 > [!NOTE]
 > Check that the **Arm CMSIS Solution** extension is at least v1.64.0.
@@ -111,7 +109,6 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
   ```
 
 - Set the environment variables for Zephyr workspace and Python virtual environoment in Keil Studio as explained in the [Keil Studio documentation](https://mdk-packs.github.io/vscode-cmsis-solution-docs/zephyr.html#set-environment-variables). 
-  
 
 - Make sure to restart the VS Code.
 
@@ -123,10 +120,3 @@ This chapter contains installation instructions for [Linux and macOS](#linux-and
 | [threads](./Examples/STM32H7B3I-DK/Threads/) | A standard Zephyr basic example that spawns multiple compile-time threads that blink LEDs with different periods and report status via a FIFO to a print thread. |
 
 For more information about each example, please see the official [Zephyr example](https://github.com/zephyrproject-rtos/zephyr/tree/main/samples/basic) repository.
-
-## Work with the example
-1. Open the cloned repository's folder in VS Code.
-2. In the CMSIS view, click on **...**, use **Select Active Solution from workspace**, and choose an option.
-3. Press the **Manage Solution Settings** button. In the dialog, select the target board and application.
-4. Press the **Build solution** button to build the example.
-5. Start the CMSIS Debugger.
